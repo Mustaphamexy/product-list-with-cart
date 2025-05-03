@@ -17,7 +17,35 @@
 }
 
 html, body {
-    overflow: hidden;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
+
+#order-confirmation {
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  #order-confirmation .bg-white {
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #confirmation-items {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+  
+  /* Add responsive padding for smaller screens */
+  @media (max-width: 640px) {
+    #order-confirmation .bg-white {
+      padding: 1rem;
+      max-height: 85vh;
+    }
+    
+    #confirmation-items {
+      max-height: 40vh;
+    }
+  }

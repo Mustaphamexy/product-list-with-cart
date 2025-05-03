@@ -9,7 +9,7 @@
 </head>
 <body class="bg-primary font-redhat">
 
-    <div class="max-w-8xl mx-auto px-4 py-8 ">
+    <div class="max-w-screen-2xl mx-auto px-4 py-8 ">
         <div class="flex flex-col md:flex-row justify-between mb-8 gap-8 ">
             <!-- product list  -->
             <div class="flex-grow">
@@ -22,7 +22,7 @@
             </div>
            
             <!-- cart side  -->
-            <div class="lg:w-96  bg-white shadow-md rounded-lg p-6 sticky top-8 h-2/3">
+            <div class="w-full lg:w-96 bg-white shadow-md rounded-lg p-6 lg:sticky lg:top-8 h-2/3">
                 <div>
                     <h2 class="text-xl font-bold text-heading-text mb-6" id="cart-title">Your Cart(0)</h2>
                 </div>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Order Confirmation -->
-        <div id="order-confirmation" class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 hidden ">
+        <div id="order-confirmation" class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 overflow-y-auto hidden ">
             <div class="bg-white rounded-lg p-6 max-w-md w-full">
               <div class="flex justify-center mb-4 w-12 h-12  items-start ">
                   <img src="src/images/icon-order-confirmed.svg" alt="">
