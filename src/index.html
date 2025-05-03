@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List with Cart</title>
+  <link href="./output.css" rel="stylesheet">
+
+</head>
+<body class="bg-primary font-redhat">
+
+    <div class="max-w-8xl mx-auto px-4 py-8 ">
+        <div class="flex flex-col md:flex-row justify-between mb-8 gap-8 ">
+            <!-- product list  -->
+            <div class="flex-grow">
+                <h1 class="text-3xl font-bold text-secondary-text">Dessert</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8" id="product-list">
+                    <!-- Product items will be dynamically inserted here -->
+                     
+                </div>
+            </div>
+           
+            <!-- cart side  -->
+            <div class="lg:w-96  bg-white shadow-md rounded-lg p-6 sticky top-8 h-2/3">
+                <div>
+                    <h2 class="text-xl font-bold text-heading-text mb-6" id="cart-title">Your Cart(0)</h2>
+                </div>
+
+                <div id="empty-cart" class="flex flex-col items-center py-8 text-center">
+                    <div class="w-20 h-20  mb-4">
+                      <img src="images/illustration-empty-cart.svg" alt="" class="w-full h-full">
+                    </div>
+                    <p class="text-secondary-text">Your added items will appear here</p>
+                  </div>
+                  
+                  <div id="cart-items" class="hidden">
+                    <div class="space-y-4 mb-6" id="cart-items-container">
+                      <!-- Cart items will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="border-t pt-4 mb-6">
+                      <div class="flex justify-between ">
+                        <span class="text-secondary-text font-light">Order Total</span>
+                        <span id="total-price" class="font-bold text-2xl text-secondary-text">$0.00</span>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-center text-sm mb-6">
+                      <img src="images/icon-carbon-neutral.svg" alt="" class="w-5 h-5 mr-2">
+                      <span class="font-medium text-secondary-text"> This is a carbon-neutral delivery</span>
+                    </div>
+                    
+                    <button id="confirm-order-btn" class="w-full bg-orange-700 hover:bg-orange-800 text-white py-3 rounded-full font-medium">
+                    Confirm Order</button>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Order Confirmation -->
+        <div id="order-confirmation" class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 hidden ">
+            <div class="bg-white rounded-lg p-6 max-w-md w-full">
+              <div class="flex justify-center mb-4 w-12 h-12  items-start ">
+                  <img src="images/icon-order-confirmed.svg" alt="">
+              </div>
+
+              <div class="flex flex-col mb-4 items-start">
+                <h2 class="text-3xl font-bold text-center mb-2 text-secondary-text">Order Confirmed</h2>
+                <p class="text-primary-text text-center mb-6">We hope you enjoy your food!</p>
+              </div>
+             
+              
+              <div class="bg-rose-100 rounded-lg p-4 mb-6" id="confirmation-items">
+                <!-- Order summary will be inserted here by JavaScript -->
+
+                <div class="flex justify-between border-t pt-4 font-medium mb-6">
+                    <span class="text-secondary-text font-light">Order Total</span>
+                    <span id="confirmation-total" class="text-secondary-text font-bold">$0.00</span>
+                  </div>
+              </div>
+             <img src="images/icon-increment-quantity.svg" alt="">
+              
+              <button id="new-order-btn" class="w-full bg-orange-700 hover:bg-orange-800 text-white py-3 rounded-full font-medium">
+                Start New Order </button>
+            </div>
+          </div>
+    </div>
+  
+</body>
+<script src="script.js"></script>
+</html>

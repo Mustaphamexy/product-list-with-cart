@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import "tailwindcss";
+
+
+@tailwind utilities;
+
+
+
+@theme{
+    --color-primary: #f4edeb;
+    --color-secondary:  hsl(7, 20%, 60%);
+    --color-primary-text: #ad8985;
+    --color-secondary-text: #260f08;
+    --color-heading-text: #c73a0f;
+    --font-redhat: 'Red Hat Text', sans-serif;   
+}
+
+html, body {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
