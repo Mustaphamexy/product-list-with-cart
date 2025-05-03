@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product List with Cart</title>
-  <link href="./output.css" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
 
 </head>
 <body class="bg-primary font-redhat">
@@ -29,7 +29,7 @@
 
                 <div id="empty-cart" class="flex flex-col items-center py-8 text-center">
                     <div class="w-20 h-20  mb-4">
-                      <img src="images/illustration-empty-cart.svg" alt="" class="w-full h-full">
+                      <img src="src/images/illustration-empty-cart.svg" alt="" class="w-full h-full">
                     </div>
                     <p class="text-secondary-text">Your added items will appear here</p>
                   </div>
@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="flex items-center text-sm mb-6">
-                      <img src="images/icon-carbon-neutral.svg" alt="" class="w-5 h-5 mr-2">
+                      <img src="src/images/icon-carbon-neutral.svg" alt="" class="w-5 h-5 mr-2">
                       <span class="font-medium text-secondary-text"> This is a carbon-neutral delivery</span>
                     </div>
                     
@@ -61,7 +61,7 @@
         <div id="order-confirmation" class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 hidden ">
             <div class="bg-white rounded-lg p-6 max-w-md w-full">
               <div class="flex justify-center mb-4 w-12 h-12  items-start ">
-                  <img src="images/icon-order-confirmed.svg" alt="">
+                  <img src="src/images/icon-order-confirmed.svg" alt="">
               </div>
 
               <div class="flex flex-col mb-4 items-start">
@@ -78,7 +78,7 @@
                     <span id="confirmation-total" class="text-secondary-text font-bold">$0.00</span>
                   </div>
               </div>
-             <img src="images/icon-increment-quantity.svg" alt="">
+             <img src="src/images/icon-increment-quantity.svg" alt="">
               
               <button id="new-order-btn" class="w-full bg-orange-700 hover:bg-orange-800 text-white py-3 rounded-full font-medium">
                 Start New Order </button>
@@ -87,5 +87,5 @@
     </div>
   
 </body>
-<script src="script.js"></script>
+<script src="src/script.js"></script>
 </html>

@@ -12,7 +12,7 @@ const newOrderBtn = document.getElementById('new-order-btn');
 
 async function getData() {
     try {
-        const response = await fetch("data.json");
+        const response = await fetch("/src/data.json");
         if (!response.ok) {
             throw new Error("Failed to fetch");
         }
@@ -47,15 +47,15 @@ function showProducts(products) {
                 <div class="product-actions relative bottom-5 left-20">
                     <!-- Initial Add to Cart Button (visible by default) -->
                     <button class="add-to-cart-btn flex justify-between bg-white border-2 border-secondary-text rounded-full py-2 px-8 hover:text-heading-text hover:border-heading-text transition duration-300 ease-in-out" data-id="${product.id}">
-                        <img src="images/icon-add-to-cart.svg" alt="">
+                        <img src="src/images/icon-add-to-cart.svg" alt="">
                         <span class="text-secondary-text font-medium hover:text-heading-text ml-2">Add to Cart</span>
                     </button>
                     
                     <!-- Quantity Controls (hidden by default) -->
                     <div class="quantity-controls justify-between hidden flex items-center bg-red-500  rounded-full py-2 px-4" data-id="${product.id}" style="width: 150px; background-color: #d9480f;">
-                        <button class="decrease-btn border-2 w-6 h-6 flex items-center justify-center rounded-full  font-bold text-xl px-2 text-white"><img src="images/icon-decrement-quantity.svg" alt=""></button>
+                        <button class="decrease-btn border-2 w-6 h-6 flex items-center justify-center rounded-full  font-bold text-xl px-2 text-white"><img src="src/images/icon-decrement-quantity.svg" alt=""></button>
                         <span class="quantity-display text-white mx-3 font-medium">1</span>
-                        <button class="increase-btn border-2 w-6 h-6 flex items-center justify-center rounded-full font-bold text-xl px-2 text-white"><img src="images/icon-increment-quantity.svg" alt=""></button>
+                        <button class="increase-btn border-2 w-6 h-6 flex items-center justify-center rounded-full font-bold text-xl px-2 text-white"><img src="src/images/icon-increment-quantity.svg" alt=""></button>
                     </div>
                 </div>
             </div>
