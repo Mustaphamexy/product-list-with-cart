@@ -12,7 +12,7 @@ const newOrderBtn = document.getElementById('new-order-btn');
 
 async function getData() {
     try {
-        const response = await fetch("src/data.json");
+        const response = await fetch("./src/data.json");
         if (!response.ok) {
             throw new Error("Failed to fetch");
         }
